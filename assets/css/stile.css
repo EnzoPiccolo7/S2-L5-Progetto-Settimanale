@@ -1,8 +1,87 @@
 /* IMPOSTAZIONI GENERALI */
+body {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8rem;
+}
+h1 {
+    font-size: 3.6rem;
+    width: 70%;
+    line-height: 4.5rem;
+    padding-left: 2rem;
+    padding-top: 3.8rem;
+    margin-bottom: 2.3rem;
+}
+h2 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2.8rem;
+}
+h3 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 1.6rem;
+}
+
 
 /* HEADER */
+header img {
+    margin: 1rem;
+    height: 3.5rem; 
+}
 
 /* MAIN */
+main> div {
+    background: url(../images/banner.jpg) center;
+    background-size: cover;
+    width: auto;
+    height: 34.5rem;
+    color:white;
+    box-sizing: border-box;
+    box-shadow: #d3d3d3;
+    text-shadow: -1px 1px 1px black;
+    
+}
+
+button {
+    color: white;
+    font-size: 1.6rem;
+    background: rgb(108,193,226);
+    background: linear-gradient(76deg, #6cc1e2 0%, #43096a 88%); 
+    border: 0;
+    margin-left: 2.2rem;
+    margin-top: 1.3rem;
+    padding: 1rem 1.4rem 1rem 1.4rem;
+    text-shadow: -1px 1px 1px black;
+}
+nav button {
+    visibility: hidden;
+}
+main div p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin-left: 2.2rem;
+    margin-top: -0.8rem;
+}
+section div {
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 3.3rem;
+}
+.lni {
+    margin-top: 2.7rem;
+    color: #e42424;
+}
+article div {
+    height: 20rem;
+    background-color: #0c0633;
+    color: white;
+    text-align: center;
+    
+}
 
 /* FOOTER */
 
