@@ -15,50 +15,59 @@
 </head> 
 
 <body>
-  <header>
-    <div><img src="assets/images/logo.png" alt="logo"></div> <!-- logo -->
-    <nav>
-      <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contatti.html" target="_blank" >Contatti</a></li>
-      <li><a href="chi-siamo.html" target="_blank">Chi siamo</a></li>
-      </ul>
-        <form action="https://epicode.com/it/" method="get" target="_blank">
-          <button type="submit">Registrati</button>
-        </form>
-      </div>
-    </div>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+        <div>
+            <a href="index.html" title="Homepage">
+                <img src="assets/images/logo.png" alt="logo epicode" height="50px">
+            </a>
+        </div>
+        <label for="menuButton" id="menuMobile"><i class="lni lni-more-alt"></i></label>
+        <input type="checkbox" id="menuButton">
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Homepage">Home</a></li>
+                <li><a href="chi-siamo.html" title="Chi Siamo">Chi Siamo</a></li>
+                <li><a href="contatti.html" title="Contatti">Contatti</a></li>
+                <li><button type="submit"><a href="https://epicode.com/it/" target="_blank">Registrati</a></button></li>
+            </ul>
+        </nav>
+    </header>
+  </div>
   <main>
-    <div>  
-      <div>
+     
+      <div class="banner">
         <h1>Diventa un developer EPICO</h1>
         <p>Diventa un developer EPICO e ti troviamo noi il lavoro.Scommettiamo su di te: paghi metà corso,
            l'altra metà solo qiando inizi a lavorare
         </p>
         <form action="https://epicode.com/it/" method="get" target="_blank">
-          <button type="submit">Chiedi info</button>
+          <button class="chiedi" type="submit">Chiedi info</button>
         </form>
       </div>
-    </div>
+    
     <section>
       <div>
         <h2>Perché diventare un Developer?</h2>
         <p>Non servono laurea e comptenze specifiche,solo impegno.Segui il corso online,dove vuoi tu.
            Il lavoro che andrai a dare è veramente figo.
         </p>
-        <i class="lni lni-comments"></i>
-        <h3>Tutti ti cercheranno</h3>
-        <p> Sono 30.000 n italia le posizioni di developer scoperte,scegli quella  che ti stimola di più.</p>
-        <i class="lni lni-map-marker"></i>
-        <h3>Potrai avorare dove vuoi</h3>
-        <p>Non serve lavorare in ufficio per essere creatori di prodotti digitali, e le aziende lo sanno.
-         Lavora da casa, in riva al mare o in montagna.</p>
-        <i class="lni lni-consulting"></i>
-        <h3>Azienda, Freelance o Startup</h3>
-        <p>Scegli piu facilmente la carriera e il rapporto di lavoro che ti piace di più, in qualsiasi momento.</p>
-      </div>
+        <div class="contenuto">
+          <div><i class="lni lni-comments"></i>
+            <h3>Tutti ti cercheranno</h3>
+            <p> Sono 30.000 n italia le posizioni di developer scoperte,scegli quella  che ti stimola di più.</p>
+          </div>
+            <div><i class="lni lni-map-marker"></i>
+            <h3>Potrai avorare dove vuoi</h3>
+            <p>Non serve lavorare in ufficio per essere creatori di prodotti digitali, e le aziende lo sanno.
+                    Lavora da casa, in riva al mare o in montagna.</p>
+            </div>
+            <div> <i class="lni lni-consulting"></i>
+            <h3>Azienda, Freelance o Startup</h3>
+            <p>Scegli piu facilmente la carriera e il rapporto di lavoro che ti piace di più, in qualsiasi momento.</p>
+            </div>
+        </div>
+    </div>
     </section>
     <article>
       <div>
@@ -71,11 +80,49 @@
     </article>
     <aside>
       <div>
-        <img src="assets/images/notebook.jpg" alt="computer" width="360px">
+        <img src="assets/images/notebook.jpg" alt="computer" width="380px">
+      </div>
+      <div class="chisarai">
+        <h3><i class="lni lni-happy"></i> Chi sarai</h3>
+        <p>Il creatore delle app che usi tutti i giorni</p>
+        <h3><i class="lni lni-cool"></i> Chi diventerai</h3>
+        <p>Lo specialista padrone del suo tempo e spazio</p>
+        <h3><i class="lni lni-suspect"></i> Chi non sarai</h3>
+        <p>Il nerd incollato allo schermo</p>
       </div>
     </aside>
-
-
+    <footer>
+      <div class="footer">
+        <div>
+          <h3>Chi siamo</h3>
+          <p>Epicode School nasce con l'obiettivo di rivoluzionare 
+             la formazione in ambito tech.</p>
+        </div>
+        <div>
+          <h4>Ti piace ciò che vedi?
+              Condividilo con i tuoi amici!
+          </h4>
+          <a class="a"  href="https://www.facebook.com/epicodeitalia/?hc_ref=ARQAgi8ztercLqDzT4rEXdWYFnGMDyNXROMYhVwb99_x4l3nSmzxbiQBacbACGtRt0k&fref=nf&
+               __xts__[0]=68.ARBaEqhsfnXQLnGdQBQE1PO57es3-n7tjlVkfjIl6r3pJ0wiJr_FLp9PXYbxZF4If_Y7S-TktM4ABV3qZWBC17eA1ta
+               bhg5c_8pRdDuw0kP8v-h3Tg9XmsTO0VpeiiE7KYGxx5FtTplkNaLm4CQoBC81N_vLX_VMYojBH4E8amWYFlhP4h7lWjqbFBMoHnPYwZHd
+               MGzZWiildDM0Izmpp4OUfJRMLMxndAHB-vHFRi7_DKA4-zCf9Z53rM_RhGwXeUPYhN0GXo_LnARQ5Pd3FrpysjKTu
+               sSCaG9CTU3PQiyB293lrVs" target="_blank"><i class="lni lni-facebook-original"></i></a>
+          <a href="https://it.linkedin.com/school/epicodeitalia/" target="_blank"><i class="lni lni-linkedin-original"></i></a>
+          <a href="https://www.instagram.com/epicode.italia/" target="_blank"><i class="lni lni-instagram-filled"></i></a>
+        </div>
+        <div>
+          <h4 class="iscriviti">Iscriviti alla nostra newsletter</h4>
+          <form action="https://gz47wkxxvnv.typeform.com/to/BzbJKnBH?typeform-source=epicode.com" method="get">
+            <input type="email" name="email" id="email" required>
+            <button type="submit">Va bene!</button>
+          </form>
+        </div>
+      </div>
+      <address>&copy; 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - 
+        tel. 06-12345678
+      </address>
+    </footer>
+    
 
   </main>
 

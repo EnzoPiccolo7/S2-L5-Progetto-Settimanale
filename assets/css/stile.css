@@ -1,6 +1,7 @@
 /* IMPOSTAZIONI GENERALI */
 html {
-    font-size: 1rem;
+    font-size: 100%;
+    box-sizing: border-box;
 }
 body {
     color: #000;
@@ -9,15 +10,17 @@ body {
     line-height: 1.8rem;
 }
 h1 {
-    font-size: 3.6rem;
+    font-size: 4rem;
     width: 70%;
-    line-height: 4.5rem;
+    line-height: 4.6rem;
     padding-left: 2rem;
     padding-top: 3.8rem;
     margin-bottom: 2.3rem;
+    color: white;
+    text-shadow: 0px 1px 1px black;
 }
 h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     line-height: 3rem;
     margin-top: 4rem;
     margin-bottom: 2.8rem;
@@ -27,27 +30,62 @@ h3 {
     line-height: 3rem;
     margin-bottom: 1.6rem;
 }
+h5 {
+    font-size: 2rem;
+    margin-top: 2.2rem;
+}
 
 
 /* HEADER */
-/* /* header div {
-    box-shadow: #d3d3d3; */
 
-header img {
-    margin: 1rem;
-    height: 3.5rem; 
+.container {
+    width: 80%;
+    
+}
+header {
+    box-shadow: 0 2px 10px rgb(226, 226, 226);
+    padding: 0.5rem;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -25%;
+    /* position: sticky; */
+
+}
+input#menuButton {
+    display: none;
+}
+input#menuButton:checked ~ nav {
+    height:200px;
+} 
+header nav ul li a {
+    text-decoration: none;
+    color: grey;
 }
 
+
+
 /* MAIN */
+.container {
+    color: #000;
+    width: 80%;
+    
+}
 main> div {
-    background: url(../images/banner.jpg) center;
-    background-size: cover;
-    width: auto;
+    
     height: 34.5rem;
     color:white;
     box-sizing: border-box;
     text-shadow: -1px 1px 1px black;
 }
+.banner {
+    background: url(../images/banner.jpg) center;
+    background-size: cover;
+    width: auto;
+}
+
 
 button {
     color: white;
@@ -55,10 +93,19 @@ button {
     background: rgb(108,193,226);
     background: linear-gradient(76deg, #6cc1e2 0%, #43096a 88%); 
     border: 0;
-    margin-left: 2rem;
+    margin-left: -1.7rem;
     margin-top: 1.3rem;
-    padding: 1rem 1.4rem 1rem 1.4rem;
-    text-shadow: -1px 1px 1px black;
+    padding: 1rem 1.2rem 1rem 1.4rem;
+    
+}
+.chiedi {
+    animation: bottone 2s infinite
+
+}
+@keyframes bottone {
+    0% {box-shadow: 0 0 0 0 rgb(0, 0, 0, 0.7);}
+    50%  {box-shadow: 0 0 0 10px rgb(0, 0, 0, 0);}
+    100%   {box-shadow: 0 0 0 0 rgb(0, 0, 0, 0);}
 }
 
 main div p {
@@ -75,6 +122,7 @@ section div {
     font-size: 3.3rem;
 }
 .lni {
+    
     margin-top: 2.7rem;
     color: #e42424;
 }
@@ -83,7 +131,6 @@ article div {
     background-color: #0c0633;
     color: white;
     text-align: center;
-    margin-right: 1rem;
 }
 article div h3 {
     margin-top: 59px;
@@ -94,10 +141,475 @@ article div h3 {
 article div p {
     font-size: 1.1rem;
 }
-article button {
-    margin-right: 1.9rem;
+aside {
+    text-align: center;
+}
+aside img {
+    margin-top: 4rem;
+    margin-bottom: -1.1rem;
+}
+.lni {
+    font-size: 2.6rem;
+}
+aside p {
+    line-height: 0.6rem;
+    font-size: 1.3rem;
+}
+.tutto {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-left: 1rem;
+    margin-right:  1rem;
+    
+}
+.tutto h1 {
+    font-size: 3.5rem; 
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    color: black;
+    text-shadow: none;
+    width: auto;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.tutto p {
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-left: 1.7rem;
+    margin-right:  1.7rem;
+    color: black;
+    text-shadow: none;
+    margin-bottom: 1.3rem;
+}
+.tutto img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.tutto div {
+    margin-bottom: -2.7rem;
 }
 
+caption {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 10rem;
+}
+th {
+    padding-left: 4px; 
+    font-weight:bolder; 
+    width: 10rem;
+}
+.tab {
+    background-color: white;
+}
+.maincontatti {
+    width: 125%;
+    text-align: center;
+}
+.contatti {
+    color: black;
+    text-shadow: none;
+}
+#nome {
+    font-size: 1rem;
+    width: 22rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    margin-top: -2rem;
+    
+}
+#email2 {
+    font-size: 1rem;
+    width: 22rem;
+    height: 3rem;
+    font-style: italic;
+}
+#text {
+    width: 22rem;
+    margin-top: 1.6rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    padding-top: 1rem;
+}
+div.informativa {
+   width: 100%;
+   margin-top: -7.6rem;
+   margin-bottom: 2rem;
+}
+.informativa p {
+    font-size: 1rem;
+    line-height: 3rem;
+}
+.informativa address {
+    margin-top: 1rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.informativa form input,textarea {
+    border-radius: 4px;
+}
+.informativa p:last-child {
+    margin-left: 5rem; ;
+    width: 21rem;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+}
+
+
 /* FOOTER */
+footer {
+    height: 50rem;
+    background-color:rgb(238,238,238);
+    text-align: left;
+    margin-top: 6rem;
+    padding-top: 3rem;
+}
+footer> h3,h4,form,address {
+    margin-left: 3.6rem;
+    margin-right: 2rem;
+}
+.a {
+    margin-left: 3.6rem;
+    margin-top: 1rem;
+}
+footer h3,h4 {
+    font-size: 1.7rem;
+    
+}
+footer p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-left: 3.6rem;
+    margin-bottom: 2rem;
+}
+.iscriviti {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+#email {
+    height: 4rem;
+    width: 21rem;
+}
+footer form button {
+    text-align: right;
+    padding: 1.5rem 8rem 1.3rem 7.2rem;
+    margin-top: -0.7rem;
+    margin-left: 0rem;
+    text-shadow: none;
+}
+address {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+header label#menuMobile {
+    margin-top: -2rem;
+}
+
+
+/*Table layout */
+#table-section table {
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+
 
 /* RESPONSIVE */
+@media screen and (max-width: 767px) {
+    header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
+    }
+}
+h3 {
+    margin-left: 3.2rem;
+}
+
+td, tr { 
+    display: block; 
+}
+tr:nth-of-type(odd) { 
+    background: #d2dce7; 
+}
+thead tr { 
+position: absolute;
+top: -9999px;
+left: -9999px;
+}
+td { 
+border: none;
+padding-left: 50%; 
+    text-align: left; 
+}
+td:before { 
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.5;
+  margin-left: -100%;
+    width: 100%;
+white-space: nowrap;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+    
+   
+    #table-section table {
+        width: 100%;
+        margin-top: 100px;
+    }
+    
+    #menuMobile {
+        display: none;
+    }
+
+    header nav ul {
+        margin-right: 2em;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin: 0 0 0 0.5em;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: grey;
+        font-size: 1.1rem;
+    }
+    header nav ul li button a {
+        text-decoration: none;
+        color: white;
+       
+    }
+    header nav ul li button {
+        padding: 0.3rem 0.8rem 0.7rem 0.8rem;
+        margin-left: 1rem;
+    }
+    header nav {
+        padding-bottom: 0.8rem;
+    }
+    div.banner {
+        padding-top: 2rem;
+        padding-left: 7.5rem;
+        height: 29.5rem;
+        
+    }
+    h1 {
+        font-size: 3.4rem;
+        line-height: 1.1;
+        width: 90%;
+    }
+    .banner p {
+        font-size: 1.1rem;
+        width: 85%;
+    }
+    section div h2 {
+        font-size: 2.4rem;
+    }
+    section div p {
+        font-size: 1.1rem;
+    }
+    .contenuto {
+        display: flex;
+
+    }
+    .contenuto p {
+        text-align: left;
+        font-size: 1.2rem;
+        margin: 0 0;
+        line-height: 1.9rem; 
+    }
+    .contenuto h3 {
+        line-height: 2rem;
+    }
+    article div h3 {
+        font-size: 2.6rem; 
+    }
+    article div button {
+        padding: 0.8rem 1rem 0.8rem 1rem;
+        font-size: 1.4rem;
+    }
+    article div {
+        height: 23.8rem;
+    }
+    aside {
+        display: flex;
+        margin-left: 1.6rem;
+    }
+    aside div div {
+        font-size: 1rem;
+    }
+    .chisarai{
+        margin-top: 3.2rem;
+    }
+    .chisarai i {
+        font-size: 2rem;
+        margin-left: 1.9rem;
+        line-height: 1rem;
+    }
+    .chisarai h3 {
+        font-size: 1.9rem;
+        text-align: left;
+        line-height: 1rem;
+    
+    }
+    .chisarai p {
+        text-align: left;
+        font-size: 17px;
+    }
+    footer {
+        height: 22.5rem;
+        margin-top: 4rem;
+    }
+    .footercont {
+        width: 125%;
+        height: 27.5rem;
+    }
+    .footer {
+        display: flex;
+    }
+    .footer h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-left: -1rem;
+    }
+    .footer h4 {
+        font-size: 1.3rem;
+        margin: 0 0;
+        line-height: 1.5rem;
+        margin-bottom: -1.5rem;
+    }
+    .footer i {
+        font-size: 2rem;
+    }
+    .footer p {
+        font-size: 1rem;
+        line-height: 1.7rem; 
+        margin-left: 5.18rem;
+    }
+    .footer #email {
+        width: 10.49rem;
+        height: 3rem;
+        margin-bottom: -2px;
+        margin-right: 2.5rem; 
+    }
+    .footer div form button {
+        padding-left: 3rem;
+        padding-right: 2.8rem;
+        font-size: 1.3rem;
+        height: 4rem;
+        padding-top: 1.7rem;
+       
+    }
+    footer address {
+        font-size: 1rem;
+    }
+    footer .iscriviti {
+        margin-bottom: 2rem;
+        width: 11.87rem;
+        margin-left: 3.8rem;
+        font-size: 1.4rem;
+    }
+    .footer div a {
+        margin: 0 0;
+    }
+    main div h1 {
+        font-size: 2.5rem !important;
+    }
+    main div p {
+        font-size: 1.05rem !important;
+        line-height: 1.8rem !important;
+    }
+    .cont {
+        display: flex;
+        margin-top: -21rem;
+
+    }
+    .cont p {
+        font-size: 1rem;
+        margin-top: -1rem;
+    }
+    .cont img {
+        width: 21rem;
+        height: 15rem;
+    }
+    .maincontatti {
+        display: flex;
+    }
+    .maincontatti .informativa {
+        margin-top: 7.4rem;
+        margin-left: -2rem;
+    }
+    .maincontatti h2 {
+        margin-right: -29rem;
+    }
+    .informativa p {
+        margin-left: -2rem !important;
+    }
+}@media screen and (min-width: 1000px) {
+    header {
+        justify-content: space-around;
+    } 
+     main .banner {
+        height: 21.5rem;
+    }
+    section div h2,p {
+        font-size: 2rem;
+    }
+    section div p {
+        margin-right: 21rem;
+        margin-left: 18.8rem;
+    }
+    .contenuto div h3,p {
+        font-size: 2rem;
+        margin-left: 0px;
+    }
+    article div h3 {
+        font-size: 2.3rem !important;
+        margin-left: 1rem;
+
+    }
+    body > main:nth-child(2) > aside:nth-child(4) {
+        margin-left: 9.6rem;
+       }
+    main div p {
+        font-size: 1rem !important;
+    }
+    .cont p {
+        font-size: 0.9rem;
+    }
+    .cont > div:nth-child(2) > p:nth-child(2) {
+        padding-left: 37px;
+        padding-right: 44px;
+       }
+       .cont > div:nth-child(1) > p:nth-child(2) {
+        padding-left: 46px;
+        padding-right: 43px;
+       }
+       .cont > div:nth-child(1) {
+        margin-right: -8rem;
+       }
+       .maincontatti > aside:nth-child(2) {
+        margin-left: 14.6rem;
+       }
+       
+       
+       
+       
+       
+
+
+
+}
