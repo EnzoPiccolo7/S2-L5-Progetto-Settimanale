@@ -91,7 +91,7 @@ button {
     color: white;
     font-size: 1.6rem;
     background: rgb(108,193,226);
-    background: linear-gradient(76deg, #6cc1e2 0%, #43096a 88%); 
+    background: linear-gradient(76deg, #6cc1e2 0%, #43096a 88%); /* ho cambiato il colore in quanto era quello piu simile all'esempio*/
     border: 0;
     margin-left: -1.7rem;
     margin-top: 1.3rem;
@@ -365,7 +365,7 @@ white-space: nowrap;
     
     
    
-    #table-section table {
+    #table-section table { /* non capisco perchè la tabella non perde le impostazioni date nel media precedente  */
         width: 100%;
         margin-top: 100px;
     }
